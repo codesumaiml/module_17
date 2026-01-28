@@ -63,6 +63,11 @@ Increase `--ExecutePreprocessor.timeout` if long-running cells (e.g., GridSearch
    - SVC: **0.8970** (best params: `{'clf__C': 1, 'clf__gamma': 'scale', 'clf__kernel': 'poly'}`)
    - Best overall (observed): **Decision Tree — 0.8972**
 - **Operational note:** GridSearch in the notebook is configured to run with `n_jobs=1` to avoid platform-specific `ChildProcessError` issues; if you have a stable multiprocessing environment, you can increase `n_jobs` for speed.
+  
+## Next steps and recommendations
+- Identify best features using Random forester
+- If we have information about customer account balance, it would help to predict subscription based on balance held (assumption: customer with more balance tend to subsribe term deposits)
+- Deep Learning (ANN)
 
 ## Next suggestions
 - Run the notebook top-to-bottom to confirm no remaining issues.
