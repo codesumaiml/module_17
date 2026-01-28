@@ -60,7 +60,7 @@ Increase `--ExecutePreprocessor.timeout` if long-running cells (e.g., GridSearch
    - Logistic Regression: **0.8969** (best params: `{'clf__C': 0.01, 'clf__penalty': 'l2', 'clf__solver': 'liblinear'}`)
    - Decision Tree: **0.8972** (best params: `{'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 1, 'min_samples_split': 2}`)
    - KNN: **0.8965** (best params: `{'clf__metric': 'minkowski', 'clf__n_neighbors': 11, 'clf__weights': 'uniform'}`)
-   - SVC: **0.8970** (best params: `{'clf__C': 1, 'clf__gamma': 'scale', 'clf__kernel': 'poly'}`)
+   - SVC: **0.8970** (best params: `{'clf__C': 1, 'clf__gamma': 'scale', 'clf__kernel': 'rbf'}`)
    - Best overall (observed): **Decision Tree — 0.8972**
 - **Operational note:** GridSearch in the notebook is configured to run with `n_jobs=1` to avoid platform-specific `ChildProcessError` issues; if you have a stable multiprocessing environment, you can increase `n_jobs` for speed.
   
